@@ -1,0 +1,326 @@
+const data = [
+  {
+    dayNum: 1,
+    total: 0.01,
+    inventory: [],
+  },
+  {
+    dayNum: 1,
+    total: 0.0,
+    inventory: ["1 Pen"],
+  },
+  {
+    dayNum: 1,
+    total: 1.0,
+    inventory: [],
+  },
+  {
+    dayNum: 1,
+    total: 0,
+    inventory: ["1 Water bottle"],
+  },
+  {
+    dayNum: 1,
+    total: 2,
+    inventory: [],
+  },
+  {
+    dayNum: 1,
+    total: 0,
+    inventory: ["2 Water bottles"],
+  },
+  {
+    dayNum: 1,
+    total: 10.5,
+    currencyConvert: "€10.00",
+    inventory: ["1 Water bottle"],
+    note: "Thank you so much, Fionn!",
+  },
+  {
+    dayNum: 1,
+    total: 10.5,
+    currencyConvert: "€10.00",
+    inventory: [],
+  },
+  {
+    dayNum: 1,
+    total: 10.5,
+    inventory: [],
+  },
+  {
+    dayNum: 1,
+    total: 7.91,
+    inventory: ["12 Water Bottles"],
+  },
+  {
+    dayNum: 1,
+    total: 4.42,
+    inventory: ["12 Water Bottles", "1 Poster", "2 Markers + Eraser", "String"],
+  },
+  {
+    dayNum: 1,
+    total: 8.42,
+    inventory: ["10 Water Bottles", "1 Poster", "2 Markers + Eraser", "String"],
+  },
+  {
+    dayNum: 1,
+    total: 13.42,
+    inventory: ["8 Water Bottles", "1 Poster", "2 Markers + Eraser", "String"],
+  },
+  {
+    dayNum: 1,
+    total: 15.42,
+    inventory: ["7 Water Bottles", "1 Poster", "2 Markers + Eraser", "String"],
+  },
+  {
+    dayNum: 1,
+    total: 35.42,
+    inventory: ["6 Water Bottles", "1 Poster", "2 Markers + Eraser", "String"],
+    note: "Let's go Tommy!",
+  },
+  {
+    dayNum: 1,
+    total: 37.42,
+    inventory: ["5 Water Bottles", "1 Poster", "2 Markers + Eraser", "String"],
+  },
+  {
+    dayNum: 1,
+    total: 42.42,
+    inventory: ["3 Water Bottles", "1 Poster", "2 Markers + Eraser", "String"],
+  },
+  {
+    dayNum: 1,
+    total: 44.42,
+    inventory: ["2 Water Bottles", "1 Poster", "2 Markers + Eraser", "String"],
+  },
+  {
+    dayNum: 1,
+    total: 48.42,
+    inventory: ["1 Poster", "2 Markers + Eraser", "String"],
+    note: "Sold all the water :)",
+  },
+  {
+    dayNum: 1,
+    total: 31.69,
+    inventory: ["48 Sodas", "1 Poster", "2 Markers + Eraser", "String"],
+  },
+  {
+    dayNum: 1,
+    total: 4.33,
+    inventory: [
+      // 27.36 for the cooler
+      "48 Sodas",
+      "1 Cooler",
+      "1 Poster",
+      "2 Markers + Eraser",
+      "String",
+    ],
+  },
+  {
+    dayNum: 1,
+    total: 1.5,
+    inventory: [
+      "48 Sodas",
+      "1 Cooler",
+      "Ice",
+      "1 Poster",
+      "2 Markers + Eraser",
+      "String",
+    ],
+  },
+  {
+    dayNum: 1,
+    total: 3.5,
+    inventory: [
+      "47 Sodas",
+      "1 Cooler",
+      "Ice",
+      "1 Poster",
+      "2 Markers + Eraser",
+      "String",
+    ],
+  },
+  {
+    dayNum: 1,
+    total: 28.5, // paid $25 for 1 soda lol
+    inventory: [
+      "46 Sodas",
+      "1 Cooler",
+      "Ice",
+      "1 Poster",
+      "2 Markers + Eraser",
+      "String",
+    ],
+  },
+  {
+    dayNum: 1,
+    total: 32.5,
+    inventory: [
+      "44 Sodas",
+      "1 Cooler",
+      "Ice",
+      "1 Poster",
+      "2 Markers + Eraser",
+      "String",
+    ],
+  },
+  {
+    dayNum: 1,
+    total: 34.5,
+    inventory: [
+      "43 Sodas",
+      "1 Cooler",
+      "Ice",
+      "1 Poster",
+      "2 Markers + Eraser",
+      "String",
+    ],
+  },
+  {
+    dayNum: 1,
+    total: 36.5,
+    inventory: [
+      "42 Sodas",
+      "1 Cooler",
+      "Ice",
+      "1 Poster",
+      "2 Markers + Eraser",
+      "String",
+    ],
+  },
+  {
+    dayNum: 1,
+    total: 38.5,
+    inventory: [
+      "41 Sodas",
+      "1 Cooler",
+      "Ice",
+      "1 Poster",
+      "2 Markers + Eraser",
+      "String",
+    ],
+  },
+  {
+    dayNum: 1,
+    total: 40.5,
+    inventory: [
+      "40 Sodas",
+      "1 Cooler",
+      "Ice",
+      "1 Poster",
+      "2 Markers + Eraser",
+      "String",
+    ],
+  },
+  {
+    dayNum: 1,
+    total: 42.5,
+    inventory: [
+      "40 Sodas", // tip from guy that wanted water lol
+      "1 Cooler",
+      "Ice",
+      "1 Poster",
+      "2 Markers + Eraser",
+      "String",
+    ],
+  },
+  {
+    dayNum: 1,
+    total: 44.5,
+    inventory: [
+      "39 Sodas",
+      "1 Cooler",
+      "Ice",
+      "1 Poster",
+      "2 Markers + Eraser",
+      "String",
+    ],
+  },
+  {
+    dayNum: 1,
+    total: 46.5,
+    inventory: [
+      "37 Sodas",
+      "1 Cooler",
+      "Ice",
+      "1 Poster",
+      "2 Markers + Eraser",
+      "String",
+    ],
+  },
+  {
+    dayNum: 1,
+    total: 47.5,
+    inventory: [
+      "36 Sodas",
+      "1 Cooler",
+      "Ice",
+      "1 Poster",
+      "2 Markers + Eraser",
+      "String",
+    ],
+  },
+  {
+    dayNum: 1,
+    total: 49.5,
+    inventory: [
+      "35 Sodas",
+      "1 Cooler",
+      "Ice",
+      "1 Poster",
+      "2 Markers + Eraser",
+      "String",
+    ],
+  },
+  {
+    dayNum: 1,
+    total: 51.5,
+    inventory: [
+      "34 Sodas",
+      "1 Cooler",
+      "Ice",
+      "1 Poster",
+      "2 Markers + Eraser",
+      "String",
+    ],
+  },
+  {
+    dayNum: 1,
+    total: 57.48,
+    inventory: [
+      "30 Sodas",
+      "1 Cooler",
+      "Ice",
+      "1 Poster",
+      "2 Markers + Eraser",
+      "String",
+    ],
+  },
+  {
+    dayNum: 1,
+    total: 57.48,
+    inventory: ["?? Sodas", "1 Cooler", "Ice", "2 Markers + Eraser", "String"],
+  },
+  {
+    dayNum: 1,
+    total: 84.84,
+    inventory: ["2 Markers + Eraser", "String"],
+  },
+  {
+    dayNum: 1,
+    total: 78.84,
+    inventory: ["4 Tacos", "2 Markers + Eraser", "String"],
+  },
+  {
+    dayNum: 1,
+    total: 78.84,
+    inventory: ["2 Markers + Eraser", "String"],
+  },
+  {
+    dayNum: 1,
+    total: 42.7,
+    inventory: ["Hammock", "Toiletries", "2 Markers + Eraser", "String"],
+  },
+];
+
+export { data };

@@ -1,4 +1,5 @@
 import * as React from "react";
+import Head from "next/head";
 import { Container, CssBaseline, Link } from "@mui/material";
 import {
   LineChart,
@@ -12,9 +13,18 @@ import {
 } from "recharts";
 import { data } from "./data";
 
+function numberWithCommas(x) {
+  var parts = x.toString().split(".");
+  parts[0] = parts[0].replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+  return parts.join(".");
+}
+
 const Home = () => {
   return (
     <>
+      <Head>
+        <title>Giving a Penny</title>
+      </Head>
       <CssBaseline />
       <Container
         sx={{
@@ -57,6 +67,7 @@ const Home = () => {
               stroke="#B87333"
               activeDot={{ r: 8 }}
             />
+            {/* <Line type="monotone" dataKey="donations" stroke="#82ca9d" /> */}
           </LineChart>
         </ResponsiveContainer>
       </Container>
@@ -69,13 +80,35 @@ const CustomTooltip = ({ active, payload }) => {
     const cash = payload[0].payload.total;
     const currencyConvert = payload[0].payload.currencyConvert;
     const cashText =
-      currencyConvert !== undefined ? currencyConvert : `$${cash.toFixed(2)}`;
+      currencyConvert !== undefined
+        ? currencyConvert
+        : `$${numberWithCommas(cash)}`;
 
     const inventory = payload[0].payload.inventory;
     const note = payload[0].payload.note;
+    const totalDonations = payload[0].payload.donations;
+    const mealsDonated = payload[0].payload.mealsDonated;
+    const topDonations = payload[0].payload.topDonations;
 
     return (
       <div className="custom-tooltip">
+        {mealsDonated !== undefined ? (
+          <h2 className="desc">
+            Meals donated: {numberWithCommas(mealsDonated)}
+          </h2>
+        ) : null}
+        {totalDonations !== undefined ? (
+          <p className="desc">$1,000 donations:</p>
+        ) : null}
+        {topDonations && topDonations.length > 0 ? (
+          <ol>
+            {topDonations.map((dono) => (
+              <li key={dono.name}>{`${dono.name} - $${numberWithCommas(
+                dono.amount
+              )}`}</li>
+            ))}
+          </ol>
+        ) : null}
         <p className="desc">{`Cash: ${cashText}`}</p>
         <div className="desc">
           <span>{`Inventory${inventory.length > 0 ? "" : " None"}`}</span>

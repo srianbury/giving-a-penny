@@ -22,6 +22,16 @@ function numberWithCommas(x) {
   return parts.join(".");
 }
 
+function getMealsDonated() {
+  for (let i = data.length - 1; i > -1; i--) {
+    const curMealsDonated = data[i].mealsDonated;
+    if (curMealsDonated !== undefined) {
+      return numberWithCommas(curMealsDonated);
+    }
+  }
+  return 0;
+}
+
 const Home = () => {
   return (
     <>
@@ -44,7 +54,7 @@ const Home = () => {
           >
             Donate Here
           </Link>
-          {` `}Or share this site and I'll donate $0.01 for every user that
+          {` `}or share this site and I'll donate $0.01 for every user that
           visits :)
         </span>
         <ResponsiveContainer height="100%" width="100%">
@@ -71,6 +81,7 @@ const Home = () => {
             {/* <Line type="monotone" dataKey="donations" stroke="#82ca9d" /> */}
           </LineChart>
         </ResponsiveContainer>
+        <h2>Meals donated: {getMealsDonated()}</h2>
       </Container>
     </>
   );

@@ -2230,6 +2230,98 @@ const data = [
     ],
     mealsDonated: 2234000,
   },
+  {
+    dayNum: 8,
+    total: 73.87,
+    inventory: [
+      "Flight",
+      "Hotel Room (1 night)",
+      "Blanket",
+      "Hammock",
+      "Toiletries",
+    ],
+  },
+  {
+    dayNum: 8,
+    total: 67.76, // brefast
+    inventory: [
+      "Flight",
+      "Hotel Room (1 night)",
+      "Blanket",
+      "Hammock",
+      "Toiletries",
+    ],
+  },
+  {
+    dayNum: 8,
+    total: 65.93, // autobus
+    inventory: [
+      "Flight",
+      "Hotel Room (1 night)",
+      "Blanket",
+      "Hammock",
+      "Toiletries",
+    ],
+  },
+  {
+    dayNum: 8,
+    total: 31.65,
+    inventory: [
+      "Car",
+      "Flight",
+      "Hotel Room (1 night)",
+      "Blanket",
+      "Hammock",
+      "Toiletries",
+    ],
+  },
+  {
+    dayNum: 8,
+    total: 17.79,
+    inventory: [
+      "Car",
+      "Flight",
+      "Hotel Room (1 night)",
+      "Blanket",
+      "Hammock",
+      "Toiletries",
+    ],
+  },
+  {
+    dayNum: 8,
+    total: 17.79,
+    inventory: [
+      "Car",
+      "Flight",
+      "Hotel Room (1 night)",
+      "Blanket",
+      "Hammock",
+      "Toiletries",
+    ],
+    donations: 167500,
+    topDonations: [
+      { name: "---", amount: "---" },
+      { name: "Blake Olson", amount: "50000" },
+      { name: "Skip The Tutorial", amount: "10000" },
+      { name: "Jordan Welch", amount: "5069" },
+      { name: "Matt Rutkowsku", amount: "5000" },
+      { name: "growwithjo", amount: "5000" },
+      { name: "Caylus / Infinite", amount: "5000" },
+      { name: "Jake", amount: "5000" },
+      { name: "Mintra.info", amount: "5000" },
+      { name: "Night Media", amount: "5000" },
+      { name: "Neil from Whalar", amount: "5000" },
+      { name: "MrWhoseTheBoss", amount: "5000" },
+      { name: "Isaiah", amount: "5000" },
+      { name: "Sam and Colby", amount: "5000" },
+      { name: "M", amount: "2500" },
+      { name: "Cirque du Soleil", amount: "1000" },
+      { name: "dr ryan", amount: "1000" },
+      { name: "Sean Tao", amount: "1000" },
+      { name: "Humphrey Yang", amount: "1000" },
+    ],
+    mealsDonated: 2343346,
+  },
 ];
 
 /**

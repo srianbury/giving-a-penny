@@ -110,7 +110,7 @@ const CustomTooltip = ({ active, payload }) => {
           </h2>
         ) : null}
         {totalDonations !== undefined ? (
-          <p className="desc">$1,000 donations:</p>
+          <p className="desc">Top donations:</p>
         ) : null}
         {topDonations && topDonations.length > 0 ? (
           <ol>

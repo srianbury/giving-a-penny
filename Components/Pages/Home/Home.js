@@ -36,17 +36,17 @@ const Home = () => {
         }}
       >
         <h1>I Survived On $0.01 For 30 Days</h1>
-        <Link
-          href="https://www.feedingamerica.org/penny"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Donate Here
-        </Link>
-        <div>
-          Share this site! I'll donate $0.01 for every user that visits the
-          site.
-        </div>
+        <span>
+          <Link
+            href="https://www.feedingamerica.org/penny"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Donate Here
+          </Link>
+          {` `}Or share this site and I'll donate $0.01 for every user that
+          visits :)
+        </span>
         <ResponsiveContainer height="100%" width="100%">
           <LineChart
             data={data}

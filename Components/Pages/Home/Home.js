@@ -35,13 +35,7 @@ const Home = () => {
           height: "90vh",
         }}
       >
-        <h1
-          style={{
-            margin: 0,
-          }}
-        >
-          I Survived On $0.01 For 30 Days
-        </h1>
+        <h1>I Survived On $0.01 For 30 Days</h1>
         <Link
           href="https://www.feedingamerica.org/penny"
           target="_blank"
@@ -49,6 +43,10 @@ const Home = () => {
         >
           Donate Here
         </Link>
+        <div>
+          Share this site! I'll donate $0.01 for every user that visits the
+          site.
+        </div>
         <ResponsiveContainer height="100%" width="100%">
           <LineChart
             data={data}

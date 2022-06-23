@@ -16,6 +16,9 @@ import { data } from "./data";
 function numberWithCommas(x) {
   var parts = x.toString().split(".");
   parts[0] = parts[0].replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+  if (parts.length >= 2) {
+    parts[1] = `${parts[1]}00`.substring(0, 2);
+  }
   return parts.join(".");
 }
 
@@ -111,7 +114,7 @@ const CustomTooltip = ({ active, payload }) => {
         ) : null}
         <p className="desc">{`Cash: ${cashText}`}</p>
         <div className="desc">
-          <span>{`Inventory${inventory.length > 0 ? "" : " None"}`}</span>
+          <span>{`Inventory:${inventory.length > 0 ? "" : " None"}`}</span>
           {inventory.length > 0 ? (
             <ul>
               {inventory.map((val) => (

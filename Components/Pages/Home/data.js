@@ -2322,6 +2322,158 @@ const data = [
     ],
     mealsDonated: 2343346,
   },
+  {
+    dayNum: 9,
+    total: 17.97,
+    inventory: ["Car", "Blanket", "Hammock", "Toiletries"],
+  },
+  {
+    dayNum: 9,
+    total: 15.81,
+    inventory: ["Car", "Blanket", "Hammock", "Toiletries"],
+  },
+  {
+    dayNum: 9,
+    total: 22.99,
+    inventory: ["Car", "Blanket", "Hammock", "Toiletries"],
+  },
+  {
+    dayNum: 9,
+    total: 31.6,
+    inventory: ["Car", "Blanket", "Hammock", "Toiletries"],
+  },
+  {
+    dayNum: 9,
+    total: 38.32,
+    inventory: ["Car", "Blanket", "Hammock", "Toiletries"],
+  },
+  {
+    dayNum: 9,
+    total: 55.82,
+    inventory: ["Car", "Blanket", "Hammock", "Toiletries"],
+  },
+  {
+    dayNum: 9,
+    total: 61.26,
+    inventory: ["Car", "Blanket", "Hammock", "Toiletries"],
+  },
+  {
+    dayNum: 9,
+    total: 69.06,
+    inventory: ["Car", "Blanket", "Hammock", "Toiletries"],
+  },
+  {
+    dayNum: 9,
+    total: 85.72,
+    inventory: ["Car", "Blanket", "Hammock", "Toiletries"],
+  },
+  {
+    dayNum: 9,
+    total: 91.22,
+    inventory: ["Car", "Blanket", "Hammock", "Toiletries"],
+  },
+  {
+    dayNum: 9,
+    total: 94.22,
+    inventory: ["Car", "Blanket", "Hammock", "Toiletries"],
+  },
+  {
+    dayNum: 9,
+    total: 101.97,
+    inventory: ["Car", "Blanket", "Hammock", "Toiletries"],
+  },
+  {
+    dayNum: 9,
+    total: 107.47,
+    inventory: ["Car", "Blanket", "Hammock", "Toiletries"],
+  },
+  {
+    dayNum: 9,
+    total: 111.95,
+    inventory: ["Car", "Blanket", "Hammock", "Toiletries"],
+  },
+  {
+    dayNum: 9,
+    total: 117.39,
+    inventory: ["Car", "Blanket", "Hammock", "Toiletries"],
+  },
+  {
+    dayNum: 9,
+    total: 124.23,
+    inventory: ["Car", "Blanket", "Hammock", "Toiletries"],
+  },
+  {
+    dayNum: 9,
+    total: 120.58,
+    inventory: ["Car", "Blanket", "Hammock", "Toiletries"],
+  },
+  {
+    dayNum: 9,
+    total: 125.08,
+    inventory: ["Car", "Blanket", "Hammock", "Toiletries"],
+  },
+  {
+    dayNum: 9,
+    total: 146.03,
+    inventory: ["Car", "Blanket", "Hammock", "Toiletries"],
+  },
+  {
+    dayNum: 9,
+    total: 158.54,
+    inventory: ["Car", "Blanket", "Hammock", "Toiletries"],
+  },
+  {
+    dayNum: 9,
+    total: 169.69,
+    inventory: ["Car", "Blanket", "Hammock", "Toiletries"],
+  },
+  {
+    dayNum: 9,
+    total: 182.1,
+    inventory: ["Car", "Blanket", "Hammock", "Toiletries"],
+  },
+  {
+    dayNum: 9,
+    total: 148.98, // another car rental
+    inventory: ["Car", "Blanket", "Hammock", "Toiletries"],
+  },
+  {
+    dayNum: 9,
+    total: 39.39,
+    inventory: ["Plane Ticket", "Car", "Blanket", "Hammock", "Toiletries"],
+  },
+  {
+    dayNum: 9,
+    total: 39.39,
+    inventory: ["Plane Ticket", "Car", "Blanket", "Hammock", "Toiletries"],
+    donations: 190000,
+    topDonations: [
+      { name: "---", amount: "---" },
+      { name: "Blake Olson", amount: "50000" },
+      { name: "Jordan Matter", amount: "11111" },
+      { name: "Skip The Tutorial", amount: "10000" },
+      { name: "Jordan Welch", amount: "5069" },
+      { name: "Matt Rutkowsku", amount: "5000" },
+      { name: "growwithjo", amount: "5000" },
+      { name: "Caylus / Infinite", amount: "5000" },
+      { name: "Jake", amount: "5000" },
+      { name: "Night Media", amount: "5000" },
+      { name: "Neil from Whalar", amount: "5000" },
+      { name: "MrWhoseTheBoss", amount: "5000" },
+      { name: "Isaiah", amount: "5000" },
+      { name: "Sam and Colby", amount: "5000" },
+      { name: "Mintra.info", amount: "5000" },
+      { name: "Shawn Rec Room", amount: "5000" },
+      { name: "Shawn Johnson, Andrew East", amount: "5000" },
+      { name: "Anonymous", amount: "5000" },
+    ],
+    mealsDonated: 3675800,
+  },
+  {
+    dayNum: 10,
+    total: 31.42, // brefast
+    inventory: ["Plane Ticket", "Car", "Blanket", "Hammock", "Toiletries"],
+  },
 ];
 
 /**

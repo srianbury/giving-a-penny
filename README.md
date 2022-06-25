@@ -40,3 +40,7 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 1. All profit must come from penny
 2. All grub, boarding, transportation must come from profit from penny
 3. 30 day time limit to cross America and give MrBeast a penny
+
+#### Google Analytics
+
+"all time new users"

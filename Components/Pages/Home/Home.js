@@ -1,6 +1,7 @@
 import * as React from "react";
 import Head from "next/head";
-import { Container, CssBaseline, Link } from "@mui/material";
+import NextLink from "next/link";
+import { Container, CssBaseline, Link, Box } from "@mui/material";
 import {
   LineChart,
   Line,
@@ -11,7 +12,7 @@ import {
   Legend,
   ResponsiveContainer,
 } from "recharts";
-import { data } from "./data";
+import { data } from "../data";
 
 function numberWithCommas(x) {
   var parts = x.toString().split(".");
@@ -45,7 +46,12 @@ const Home = () => {
           height: "90vh",
         }}
       >
-        <h1>I Survived On $0.01 For 30 Days</h1>
+        <NextLink href="/">
+          <a>
+            <h1>I Survived On $0.01 For 30 Days</h1>
+          </a>
+        </NextLink>
+        <h2>Meals donated: {getMealsDonated()}</h2>
         <span>
           <Link
             href="https://www.feedingamerica.org/penny"
@@ -57,6 +63,15 @@ const Home = () => {
           {` `}or share this site and I'll donate $0.01 for every user that
           visits :)
         </span>
+        <Box
+          sx={{
+            cursor: "pointer",
+          }}
+        >
+          <NextLink href="/donations">
+            <Link>Donations</Link>
+          </NextLink>
+        </Box>
         <ResponsiveContainer height="100%" width="100%">
           <LineChart
             data={data}
@@ -81,7 +96,6 @@ const Home = () => {
             {/* <Line type="monotone" dataKey="donations" stroke="#82ca9d" /> */}
           </LineChart>
         </ResponsiveContainer>
-        <h2>Meals donated: {getMealsDonated()}</h2>
       </Container>
     </>
   );

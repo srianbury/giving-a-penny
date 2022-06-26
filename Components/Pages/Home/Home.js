@@ -123,7 +123,7 @@ const CustomTooltip = ({ active, payload }) => {
             Meals donated: {numberWithCommas(mealsDonated)}
           </h2>
         ) : null}
-        {totalDonations !== undefined ? (
+        {/* {totalDonations !== undefined ? (
           <p className="desc">Top donations:</p>
         ) : null}
         {topDonations && topDonations.length > 0 ? (
@@ -134,7 +134,7 @@ const CustomTooltip = ({ active, payload }) => {
               )}`}</li>
             ))}
           </ol>
-        ) : null}
+        ) : null} */}
         <p className="desc">{`Cash: ${cashText}`}</p>
         <div className="desc">
           <span>{`Inventory:${inventory.length > 0 ? "" : " None"}`}</span>

@@ -54,7 +54,6 @@ const Donationers = () => {
             <Link>Home</Link>
           </NextLink>
         </Box>
-        <h2>Meals donated: {getMealsDonated()}</h2>
         <ol>
           {getDonationers().map((dono) => (
             <li key={dono.name}>{`${dono.name} - $${numberWithCommas(

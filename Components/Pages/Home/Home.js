@@ -92,14 +92,13 @@ const CustomTooltip = ({ active, payload }) => {
         ? currencyConvert
         : `$${numberWithCommas(cash)}`;
 
-    const inventory = payload[0].payload.inventory;
-    const note = payload[0].payload.note;
-    const totalDonations = payload[0].payload.donations;
-    const mealsDonated = payload[0].payload.mealsDonated;
-    const topDonations = payload[0].payload.topDonations;
+    const { dayNum, inventory, note, mealsDonated } = payload[0].payload;
+    // const totalDonations = payload[0].payload.donations;
+    // const topDonations = payload[0].payload.topDonations;
 
     return (
       <div className="custom-tooltip">
+        <div>Day: {dayNum}</div>
         {mealsDonated !== undefined ? (
           <h2 className="desc">
             Meals donated: {numberWithCommas(mealsDonated)}

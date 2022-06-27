@@ -1,9 +1,16 @@
 import * as React from "react";
 import Head from "next/head";
-import NextLink from "next/link";
-import { Container, Link, Box } from "@mui/material";
+import {
+  Box,
+  Card,
+  CardActions,
+  CardContent,
+  Container,
+  Grid,
+  Typography,
+} from "@mui/material";
 import { data } from "../data";
-import { numberWithCommas, getMealsDonated } from "../../../utils";
+import { numberWithCommas } from "../../../utils";
 
 function getDonationers() {
   for (let i = data.length - 1; i > -1; i--) {
@@ -22,13 +29,18 @@ const Donationers = () => {
         <title>Giving a Penny | Donations</title>
       </Head>
       <Container>
-        <ol>
+        <Grid container spacing={2} direction="row">
           {getDonationers().map((dono) => (
-            <li key={dono.name}>{`${dono.name} - $${numberWithCommas(
-              dono.amount
-            )}`}</li>
+            <Grid item xs={4} key={dono.name}>
+              <Card sx={{ my: 2 }}>
+                <CardContent>
+                  <h3>{dono.name}</h3>
+                  <h2>{`$${numberWithCommas(dono.amount)}`}</h2>
+                </CardContent>
+              </Card>
+            </Grid>
           ))}
-        </ol>
+        </Grid>
       </Container>
     </>
   );

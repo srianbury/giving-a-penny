@@ -32,12 +32,13 @@ const NavLink = ({ href, title }) => {
     <Box
       sx={{
         cursor: "pointer",
+        "&:hover": {
+          textDecoration: "underline",
+        },
       }}
     >
       <NextLink href={href}>
-        <Link>
-          <h2>{title}</h2>
-        </Link>
+        <h2>{title}</h2>
       </NextLink>
     </Box>
   );

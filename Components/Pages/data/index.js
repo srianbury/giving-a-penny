@@ -7763,7 +7763,7 @@ const data = [
       { name: "Gabriel Bookman", amount: "1000" },
       { name: "Chaboya Family", amount: "1000" },
     ],
-    mealsDonated: 12088780,
+    mealsDonated: 12340800,
   },
 ];
 

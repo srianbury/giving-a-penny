@@ -1,4 +1,11 @@
 import Script from "next/script";
+import { CssBaseline } from "@mui/material";
+import { Header } from "../Components/Header";
+import { Details } from "../Components/Details";
+import {
+  Navigation,
+  NavigationContextProvider,
+} from "../Components/Navigation";
 import "../styles/globals.css";
 
 function MyApp({ Component, pageProps }) {
@@ -20,7 +27,13 @@ function MyApp({ Component, pageProps }) {
         });
     `}
       </Script>
-      <Component {...pageProps} />
+      <CssBaseline />
+      <NavigationContextProvider>
+        <Navigation />
+        <Header />
+        <Details />
+        <Component {...pageProps} />
+      </NavigationContextProvider>
     </>
   );
 }

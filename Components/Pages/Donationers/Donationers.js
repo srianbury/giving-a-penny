@@ -31,7 +31,7 @@ const Donationers = () => {
       <Container>
         <Grid container spacing={2} direction="row">
           {getDonationers().map((dono) => (
-            <Grid item xs={4} key={dono.name}>
+            <Grid item xs={6} sm={4} key={dono.name}>
               <Card sx={{ my: 2 }}>
                 <CardContent>
                   <h3>{dono.name}</h3>

@@ -6,11 +6,7 @@ import { getMealsDonated } from "../../utils";
 const Details = () => {
   return (
     <Container>
-      <NextLink href="/">
-        <a>
-          <h1>I Survived On $0.01 For 30 Days</h1>
-        </a>
-      </NextLink>
+      <h1>I Survived On $0.01 For 30 Days</h1>
       <h2>Meals donated: {getMealsDonated()}</h2>
       <Box
         sx={{
